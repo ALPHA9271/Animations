@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+}
+
+body::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, red, red, red);
+    animation: animate 6s linear infinite;
+}
+
+/* body::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+
+    background: linear-gradient(0deg, transparent, red, red, red);
+    animation: animate 6s linear infinite;
+    animation-delay: 4s;
+}
+ */
+
+/* .box-1::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg, transparent, rgb(233, 131, 14));
+    animation: animate 6s linear infinite;
+}
+
+.box-1::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+    background: linear-gradient(0deg, transparent, rgb(233, 131, 14));
+    animation: animate 6s linear infinite;
+    animation-delay: 4s;
+}
+
+.box-2::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg, transparent, rgb(224, 230, 50));
+    animation: animate 6s linear infinite;
+}
+
+.box-2::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+    background: linear-gradient(0deg, transparent, rgb(224, 230, 50));
+    animation: animate 6s linear infinite;
+    animation-delay: 4s;
+}
+
+.box-3::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg, transparent, rgb(151, 224, 26));
+    animation: animate 6s linear infinite;
+}
+
+.box-3::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+    background: linear-gradient(0deg, transparent, rgb(151, 224, 26));
+    animation: animate 6s linear infinite;
+    animation-delay: 4s;
+} */
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box-1 {
+    position: absolute;
+    /* width: 300px;
+    height: 300px; */
+    inset: 5px;
+    background: black;
+    z-index: 10;
+    overflow: hidden;
+
+}
+
+/* 
+.box-2 {
+    position: absolute;
+    inset: 4px;
+    /* background: black; */
+/* z-index: 10;
+    overflow: hidden;
+}
+
+.box-3 {
+    position: absolute;
+    inset: 4px;
+    background: black;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.box-4 {
+    position: absolute;
+    inset: 4px;
+    background: black;
+    z-index: 10;
+    overflow: hidden; */

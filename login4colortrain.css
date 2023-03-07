@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(43, 41, 35);
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    box-shadow: 3px 3px 12px rgba(196, 219, 147, 0.432);
+    margin-top: 175px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.box::before {
+    content: ' ';
+    position: absolute;
+    width: 345px;
+    height: 350px;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, rgb(155, 10, 171), rgb(0, 217, 232), rgb(0, 217, 232));
+    border-radius: 10px;
+    animation: rotation 6s linear infinite;
+    animation-delay: 3s;
+}
+
+.box::after {
+    content: ' ';
+    position: absolute;
+    width: 345px;
+    height: 350px;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg, transparent, rgb(155, 10, 171), rgb(41, 162, 158), rgb(0, 217, 232));
+    transform-origin: bottom right;
+    border-radius: 10px;
+    animation: rotation 6s linear infinite;
+}
+
+.form {
+    position: absolute;
+    inset: 2.5px;
+    background: rgb(43, 41, 35);
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.inside-form {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inside-form h2 {
+    margin-top: -20px;
+    color: rgb(70, 194, 238);
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: .16em;
+
+
+}
+
+#input {
+    padding: 10px;
+    margin: 30px;
+    background: transparent;
+    height: 0px;
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    width: 105px;
+}
+
+#input:hover {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 270px !important;
+    height: 50px;
+    transition: 2s;
+}
+
+#Email {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    margin-left: -170px;
+    font-size: 20px;
+    color: rgb(3, 185, 226);
+}
+
+
+
+#password {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    margin-left: -90px;
+    font-size: 20px;
+    color: rgb(3, 185, 226);
+}
+
+.submit-button .submit {
+    text-align: center;
+    border: 1px solid rgb(248, 244, 244);
+    width: 100px !important;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 23px;
+    color: rgb(24, 24, 24);
+    background: rgba(255, 255, 255, 0.485);
+    margin-top: 30px;
+
+}
+
+.submit:hover {
+    color: rgb(255, 255, 255);
+    background: rgba(24, 24, 24, 0.399);
+}
+
+@keyframes rotation {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
